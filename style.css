@@ -1,53 +1,81 @@
-/*IVE SEPARATED IN ORDER OF PAGE THEN APPEARANCE*/
-/*CLASSES & IDS ARE NAMED USING "PAGE(IF APPLICABLE)-ATTRIBUTE (IN ORDER)-CLASS/-ID"*/
-@media screen and (max-width: 850px) {
-  * {
-    flex-wrap: wrap;
-  }
+/*NOTE TO SELF, KEEP CALM AND STAY HYDRATED. YOU'VE GOT THIS*/
+
+/*RULES ARE ORGANIZED IN TERMS OF RULES AFFECTING THE WHOLE, POSITIONAL RULES, TEXT RELATED RULES AND OTHERS EG TRANSITIONS */
+
+/*FOR EVEYTHING WHEN A TAB GETS SMALLER*/
+@media screen and (max-width: 850px) { 
+  * {flex-wrap: wrap;}
 
   main {
-    margin: 0%;
+    margin: 0;
     padding: 1%;
   }
 
   nav ul {
-    flex-direction: column;
+    margin: 0;
     padding-top: 0;
     padding-bottom: 0;
-    margin: 0;
+    flex-direction: column;
   }
 
   nav li {
     margin-right: 3%;
     margin-bottom: 1%;
   }
-  
+
   button {
-  padding: 30%;
-  background-color: #D3CEDF;
-  border-radius: 5px;
-  border: none;
-  font-size: 90%;
+    padding: 30%;
+    background-color: #D3CEDF;
+    border-radius: 5px;
+    border: none;
+    font-size: 90%;
   }
-  
-  .main-img-div-class .main-img-h1-class {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    font-size: 150%;
-    line-height: 200%;
-  }
-  
+
   .nav-dropdown-item-class {
     display: none;
     position: fixed;
-    top: 25%; 
-    transform: translate(-50%, -50%); 
+    top: 25%;
+    transform: translate(-50%, -50%);
     min-width: 160px;
     z-index: 1;
   }
 
   .nav-dropdown-class:hover .nav-dropdown-item-class {display: block;}
 
+  .main-img-div-class .main-img-h1-class {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  #index-factgen-div-id #generateFactsButton {
+  margin: 10%;
+  font-size: 25px;
+  }
+
+  #index-factgen-div-id #generateFactsButtonSw {
+  margin: 10%;
+  font-size: 25px;
+  }
+
+  
+  #index-factgen-div-id #fact{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+   #index-factgen-div-id #factSw{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
   .resource-columns-box-class {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -58,16 +86,14 @@
     flex-basis: 1%;
     margin: 1em;
   }
-  
 }
 
-/*APPLIES TO EVERY SINGLE THING*/
+/* UNIVERSALS - APPLIES TO EVERYTHING INSIDE OF THEM */
 * {
   margin: 0;
   padding: 0;
 }
 
-/*UNIVERSALS - APPLIES TO EVERYTHING INSIDE OF THEM*/
 body {
   background-color: #F2D7D9;
   font-family: 'Roboto', sans-serif;
@@ -96,12 +122,11 @@ li {
 
 a {color: #16494B;}
 
-/*HEADER UNIVERSALS*/
+/* HEADER UNIVERSALS */
 header {
   display: flex;
   align-items: center;
   padding: 2%;
-
 }
 
 header h1 {
@@ -117,10 +142,10 @@ header a {
   margin: 0 5px;
 }
 
-/*NAVBAR UNIVESRALS*/
+/* NAVBAR UNIVERSALS */
 nav {display: inline;}
 
-nav li {margin:1em;}
+nav li {margin: 1em;}
 
 nav li a {
   color: #16494B;
@@ -140,41 +165,31 @@ nav ul {
   color: #16494B;
 }
 
-/*BUTTON UNIVERSALS*/
+/* BUTTON UNIVERSALS */
 button {
   padding: 20px 42px;
   border-radius: 10px;
-
   background-color: #D3CEDF;
   border: none;
-
   font-family: 'Roboto', sans-serif;
   color: #16494B;
   text-decoration: none;
   font-size: 20px;
-
   transition-property: background-color, color;
   transition-duration: 0.4s;
 }
 
-button:hover {
-  cursor: pointer;
-}
+button:hover {cursor: pointer;}
 
 button:active {
   background-color: #16494B;
   color: #d3cedf;
 }
 
-/*HEADER CLASSES AND IDS*/
-.header_colour {
-  background-color: #D3CEDF;
+/* HEADER CLASSES AND IDS */
+.header_colour {background-color: #D3CEDF;}
 
-}
-
-/*NAV BAR IDS AND CLASSES*/
-
-
+/* NAV BAR IDS AND CLASSES */
 .nav-drop-a-class li a {
   display: inline-block;
   color: #16494B;
@@ -183,10 +198,9 @@ button:active {
   text-decoration: none;
 }
 
-
 .nav-dropdown-class li {
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
 
 .nav-dropdown-item-class {
@@ -195,10 +209,9 @@ button:active {
   background-color: #D3CEDF;
   min-width: 160px;
   z-index: 1;
-  left: 50%; 
-  transform: translateX(-50%); 
+  left: 50%;
+  transform: translateX(-50%);
 }
-
 
 .nav-dropdown-item-class a {
   color: #16494b;
@@ -210,16 +223,14 @@ button:active {
 }
 
 .nav-dropdown-item-class a:hover {
-  background-color: #9cb4cc;
+  background-color: #9CB4CC;
   transition-property: background-color, color;
   transition-duration: 0.4s;
 }
 
-.nav-dropdown-class:hover .nav-dropdown-item-class {
-  display: block;
-}
+.nav-dropdown-class:hover .nav-dropdown-item-class {display: block;}
 
-/*MAIN IDS AND CLASSES*/
+/* MAIN IDS AND CLASSES */
 .main-img-div-class {
   background-color: #F2D7D9;
   width: 100%;
@@ -243,17 +254,13 @@ button:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
   font-size: 40px;
   font-weight: 900;
   line-height: 70px;
   text-align: center;
 }
 
-
-
-/*INDEX IDS AND UNIVERSALS*/
+/* INDEX IDS AND UNIVERSALS */
 #index-main-text-box-id {
   background-color: #D3CEDF;
   column-count: 2;
@@ -263,11 +270,10 @@ button:active {
   flex-direction: row;
   color: #205E61;
   text-align: center;
-
 }
 
 .index-main-box-content-class {
-  background-color: #9CB4CC;
+  background-color: #F2D7D9;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -292,14 +298,15 @@ button:active {
 
 #index-factgen-div-id {margin-bottom: 5%;}
 
-/*BUTTON*/
+/* FACT GEN CLASSES AND IDS */
 #index-factgen-div-id {
   text-align: center;
   margin-bottom: 10em;
   margin-left: auto;
   margin-right: auto;
 }
-#generateFactsButtonSw{
+
+#generateFactsButtonSw {
   margin: 2em;
   font-size: 40px;
 }
@@ -309,10 +316,9 @@ button:active {
   font-size: 40px;
 }
 
-#factSw{
+#factSw {
   margin-left: 3em;
   margin-right: 3em;
-
   text-align: center;
   font-size: 30px;
   line-height: 40px;
@@ -321,15 +327,12 @@ button:active {
 #fact {
   margin-left: 3em;
   margin-right: 3em;
-
   text-align: center;
   font-size: 30px;
   line-height: 40px;
-
 }
 
-/*ABOUT*/
-
+/* ABOUT CLASSES AND IDS */
 #about-text-id {
   font-size: 23px;
   font-weight: 400;
@@ -344,12 +347,12 @@ button:active {
   margin-bottom: 5em;
 }
 
-/*RESOURCES*/
+/* RESOURCE CLASSES AND IDS*/
 .resource-box-class {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9CB4CC;
+  background-color: #D3CEDF;
   border: 2px solid #16494B;
   flex-basis: 100%;
   flex-direction: row;
@@ -366,7 +369,6 @@ button:active {
 .resources-text-class {
   margin-top: 10%;
   margin-bottom: 10%;
-
   font-size: 40px;
   text-align: center;
   line-height: 45px;
@@ -379,16 +381,14 @@ button:active {
 
 .resource-columns-box-class {
   margin-top: 3em;
-
   column-count: 3;
   flex-wrap: wrap;
-
   text-align: center;
 }
 
 .resource-box-class:hover {cursor: pointer;}
 
-/*RESOURCE-PAGES*/
+/* RESOURCE-PAGES CLASSES AND IDS */
 .resources-page-text-class {
   text-align: center;
   font-size: 30px;
@@ -397,8 +397,6 @@ button:active {
   margin-right: 15%;
   margin-bottom: 2%;
   margin-top: 2%;
-
-
 }
 
 .resources-page-div-class {
@@ -420,6 +418,15 @@ button:active {
   font-size: 40px;
   text-align: center;
 }
+#resources-page-small-text-id{ 
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 23px;
+  line-height: 25px;
+}
 
 .resources-page-small-text-class {
   text-align: center;
@@ -430,10 +437,10 @@ button:active {
   margin-bottom: 2%;
 }
 
+
 .resources-page-ol-class {
   margin-left: 10%;
   margin-right: 10%;
-
   text-align: center;
   font-size: 20px;
   line-height: 30px;
